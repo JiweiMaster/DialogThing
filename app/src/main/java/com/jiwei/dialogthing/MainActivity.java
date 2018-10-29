@@ -4,6 +4,8 @@ import android.app.Dialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.jiwei.dialogutil.DialogUtil;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -14,8 +16,6 @@ public class MainActivity extends AppCompatActivity {
         DialogUtil dialogUtil = new DialogUtil(this);
         Dialog dialog = dialogUtil.getLoadingDialog("加载中",true);
         dialog.show();
-
-
 
     }
 }
