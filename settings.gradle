@@ -1,1 +1,1 @@
-include ':app', ':dialogutil'
+include ':app', ':dialogutil', ':actiivtylifecyclerlife'
