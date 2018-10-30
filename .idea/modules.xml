@@ -3,9 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DialogThing.iml" filepath="$PROJECT_DIR$/DialogThing.iml" />
-      <module fileurl="file://$PROJECT_DIR$/actiivtylifecyclerlife/actiivtylifecyclerlife.iml" filepath="$PROJECT_DIR$/actiivtylifecyclerlife/actiivtylifecyclerlife.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dialogutil/dialogutil.iml" filepath="$PROJECT_DIR$/dialogutil/dialogutil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/util/dialogutil.iml" filepath="$PROJECT_DIR$/util/dialogutil.iml" />
     </modules>
   </component>
 </project>

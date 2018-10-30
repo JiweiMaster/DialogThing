@@ -3,7 +3,8 @@ package com.jiwei.dialogthing;
 import android.app.Application;
 import android.util.Log;
 
-import com.jiwei.actiivtylifecyclerlife.ActivityLifeCyclerListener;
+import com.jiwei.dialogutil.ActivityLifeCyclerListener;
+
 
 /**
  * Created by 18099 on 2018/10/30.
