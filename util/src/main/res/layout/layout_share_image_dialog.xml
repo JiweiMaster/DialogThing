@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/shareDialogTitle"
+                android:gravity="center"
+                android:text="分享到钉钉"
+                android:textSize="20sp"
+                android:textColor="@color/Grey7"
+                android:layout_width="match_parent"
+                android:layout_height="38dp" />
+            <ImageView
+                android:background="@color/Grey3"
+                android:layout_width="match_parent"
+                android:layout_height="2px" />
+        </LinearLayout>
+
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/dialog_title"
+            android:layout_above="@+id/dialog_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+            <ImageView
+                android:id="@+id/shareDialogImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/dialog_bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/shareDialogCancel"
+                android:gravity="center"
+                android:text="取消"
+                android:textSize="15sp"
+                android:textColor="@color/Grey5"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/shareDialogSend"
+                android:background="@color/naviBottomColor"
+                android:gravity="center"
+                android:text="发送"
+                android:textSize="15sp"
+                android:textColor="@color/White"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

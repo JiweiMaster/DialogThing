@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.app.Application;
 import android.os.Bundle;
 
+import java.util.ArrayList;
+
 /**
  * 需要在MyApplication中调用
  * registerActivityLifecycleCallbacks(activityLifeCyclerListener);
@@ -14,6 +16,7 @@ import android.os.Bundle;
 public class ActivityLifeCyclerListener implements Application.ActivityLifecycleCallbacks{
     private static int processCount = 0;
     private ActivityListener activityListener;
+    private ArrayList<Activity> activityManager = new ArrayList<>();
 
     public interface ActivityListener{
         void onBackGround();
@@ -31,6 +34,7 @@ public class ActivityLifeCyclerListener implements Application.ActivityLifecycle
     @Override
     public void onActivityStarted(Activity activity) {
         processCount++;
+        activityManager.add(activity);
 
     }
 
@@ -50,6 +54,7 @@ public class ActivityLifeCyclerListener implements Application.ActivityLifecycle
         if(processCount == 0) {
             activityListener.onBackGround();
         }
+        activityManager.remove(activity);
     }
 
     @Override
@@ -60,5 +65,13 @@ public class ActivityLifeCyclerListener implements Application.ActivityLifecycle
     @Override
     public void onActivityDestroyed(Activity activity) {
 
+    }
+
+    public void deleteAllActivity(){
+        if(activityManager != null){
+            for(Activity activity : activityManager){
+                activity.finish();
+            }
+        }
     }
 }
